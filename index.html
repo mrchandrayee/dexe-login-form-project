@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dce2f2">
+  <title>Login Form | DEXE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <span class="orb orb-left" aria-hidden="true"></span>
+    <span class="orb orb-right" aria-hidden="true"></span>
+    <header class="page-header"><h1>Login Form</h1></header>
+
+    <section class="login-card" aria-labelledby="welcome-title">
+      <div class="brand-pill">DEXE</div>
+      <div class="avatar" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.6"/><path d="M4.5 20c.2-4.2 2.8-6.5 7.5-6.5s7.3 2.3 7.5 6.5"/></svg>
+      </div>
+      <h2 id="welcome-title">Welcome back</h2>
+      <p class="subtitle">Sign in to your DEXE account</p>
+
+      <form id="loginForm" novalidate>
+        <label class="sr-only" for="identity">Email or username</label>
+        <div class="input-shell">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19c.3-3.3 2.5-5.1 6.5-5.1s6.2 1.8 6.5 5.1"/></svg>
+          <input id="identity" name="identity" type="text" placeholder="Email or username" autocomplete="username" required>
+        </div>
+        <label class="sr-only" for="password">Password</label>
+        <div class="input-shell password-shell">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required>
+          <button class="reveal" type="button" aria-label="Show password" title="Show password">
+            <svg viewBox="0 0 24 24"><path d="M2.5 12s3.3-5.5 9.5-5.5 9.5 5.5 9.5 5.5-3.3 5.5-9.5 5.5-9.5-5.5-9.5-5.5Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+          </button>
+        </div>
+
+        <div class="options">
+          <label class="remember"><input type="checkbox" id="remember"><span>Remember me</span></label>
+          <a href="#" id="forgot">Forgot password?</a>
+        </div>
+        <button class="submit-button" type="submit">Sign In</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="or-divider"><span></span><small>or continue with</small><span></span></div>
+      <div class="social-row">
+        <button class="social google" type="button" aria-label="Continue with Google"><span>G</span></button>
+        <button class="social apple" type="button" aria-label="Continue with Apple">
+          <svg viewBox="0 0 24 24"><path d="M16.7 12.8c0-2 1.6-3 1.7-3.1-1-1.4-2.5-1.6-3-1.6-1.3-.1-2.5.8-3.2.8-.7 0-1.7-.8-2.8-.8-1.5 0-2.9.9-3.7 2.2-1.6 2.7-.4 6.7 1.1 8.9.7 1.1 1.6 2.3 2.7 2.2 1.1 0 1.5-.7 2.8-.7s1.7.7 2.8.7c1.2 0 1.9-1.1 2.6-2.2.8-1.2 1.1-2.4 1.1-2.5-.1 0-2.1-.8-2.1-3.9ZM14.6 6.7c.6-.8 1-1.8.9-2.8-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.8-1 2.7 1 .1 2.1-.5 2.8-1.3Z"/></svg>
+        </button>
+        <button class="social facebook" type="button" aria-label="Continue with Facebook">f</button>
+      </div>
+      <p class="signup">New to DEXE? <a href="#" id="createAccount">Create an account</a></p>
+    </section>
+
+    <p class="tech-stack">HTML5 | CSS3 | JS</p>
+    <footer>@DexeOfficial</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
